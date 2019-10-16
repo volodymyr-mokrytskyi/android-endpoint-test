@@ -1,0 +1,13 @@
+server:
+  port: 8070
+  servlet:
+    context-path: /des
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_SERVICE_HOST}:${POSTGRES_SERVICE_PORT}/${POSTGRES_DB_NAME}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+  jpa:
+    generate-ddl: true
